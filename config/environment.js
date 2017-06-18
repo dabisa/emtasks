@@ -4,6 +4,10 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'emtasks',
     environment: environment,
+    contentSecurityPolicy: {'connect-src': "'self' wss://*.firebaseio.com"},
+    firebase: {
+      databaseURL: 'https://emtasks-d0e1c.firebaseio.com/',
+    },
     rootURL: '/',
     locationType: 'auto',
     EmberENV: {
